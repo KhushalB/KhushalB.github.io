@@ -1,216 +1,182 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Khushal Brahmbhatt</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khushal | Robotics Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1E293B;
+      color: #F8FAFC;
+      font-family: 'Roboto Mono', monospace;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: left;
+      padding: 40px;
+      gap: 40px;
+      overflow: hidden;
+    }
 
-		<!-- Header -->
-			<div id="header">
+    .photo-container img {
+      max-height: 90vh;
+      width: auto;
+      border: 4px solid #7FB3FF;
+    }
 
-				<div class="top">
+    .content {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/khushal.jpg" alt="" /></span>
-							<h1 style="font-size: 90%" id="title">Khushal Brahmbhatt</h1>
-							<p>Robotics/Deep Learning Engineer</p>
-						</div>
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5em;
+      color: #7FB3FF;
+    }
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+    .intro {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
 
-				</div>
+    .links {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-				<div class="bottom">
+    .links a {
+      text-decoration: none;
+      color: #A5F3FC;
+      font-size: 1.5em;
+      transition: transform 0.2s, color 0.3s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Roboto Mono', monospace;
+      padding: 5px;
+    }
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/khushal-brahmbhatt/" class="icon brands fa-linkedin" style="font-size: 150%"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/KhushalB" class="icon brands fa-github" style="font-size: 150%"><span class="label">Github</span></a></li>
-							<li><a href="mailto:brahmbhk@oregonstate.edu" class="icon solid fa-envelope" style="font-size: 150%"><span class="label">Email</span></a></li>
-<!--							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
-<!--							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
-<!--							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-						</ul>
+    .links a:hover {
+      transform: scale(1.1);
+      color: #E0F2FE;
+    }
 
-				</div>
+    .coaster-button {
+      margin-top: 20px;
+      padding: 5px;
+      font-size: 1.3em;
+      font-family: 'Roboto Mono', monospace;
+      color: #A5F3FC;
+      background: none;
+      border: none;
+      cursor: pointer;
+      letter-spacing: normal;
+      transition: transform 0.2s, color 0.3s;
+      align-self: center;
+    }
 
-			</div>
+    .coaster-button:hover {
+      transform: scale(1.1);
+      color: #E0F2FE;
+    }
 
-		<!-- Main -->
-			<div id="main">
+    .fact-box {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #93C5FD;
+      min-height: 60px;
+      text-align: center;
+      align-self: center;
+      padding: 0 10px;
+    }
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+      }
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Khushal</strong></h2>
-								<p>I'm currently a grad student at Oregon State University<br />
-								and I love to work with self-driving cars, drones<br />
-								and all things deep learning.</p>
-							</header>
+      .photo-container img {
+        max-width: 100%;
+        max-height: 60vh;
+      }
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">View my work →</a>
-							</footer>
+      .content {
+        align-items: center;
+      }
 
-						</div>
-					</section>
+      .links {
+        flex-direction: column;
+        align-items: center;
+      }
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+      .links a {
+        margin: 5px 0;
+        text-align: center;
+      }
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
+      .coaster-button {
+        margin: 15px 0 0;
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="photo-container">
+    <img src="images/my-photo.jpg" alt="me" />
+  </div>
+  <div class="content">
+    <h1>Khushal B.</h1>
+    <div class="intro">
+      Hi, I'm Khushal – a robotics engineer working at the intersection of mobility and autonomy. I build intelligent systems that move with purpose.
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/khushal-brahmbhatt/" target="_blank">LinkedIn</a>
+      <a href="khushal_b_resume.pdf" target="_blank">Resume</a>
+      <a href="mailto:khushalbr@gmail.com">Email</a>
+    </div>
+    <button class="coaster-button" onclick="showNextFact()">Fun facts about coasters</button>
+    <div class="fact-box" id="factBox"></div>
+  </div>
 
-							<p>Some of the interesting projects I've worked on.</p>
+  <script>
+    const facts = [
+      "Coasters were originally called beermats.",
+      "The first coasters were made of felt in 1880s Germany.",
+	  "The largest printed coaster in the world was over 6 feet wide.",
+	  "During Prohibition, coasters were used to hide secret messages.",
+	  "In Australia, coasters are sometimes called “beer doilies.”",
+      "Coasters help prevent water rings on wood.",
+      "Collectors of coasters are called tegestologists.",
+      "Some coasters double as bottle openers!",
+      "There are digital coasters with built-in thermometers.",
+      "Some coasters light up when you place a drink on them.",
+      "In Japan, coasters are an art form with intricate designs.",
+      "The Guinness World Record for for most coasters collected is held by Leo Pisker from Austria, with over 150,000 unique coasters!",
+      "Some coasters include built-in wireless chargers.",
+      "Coasters are a symbol of hospitality in many cultures.",
+	  "There’s a sci-fi themed bar in Iceland where coasters glow under UV."
+    ];
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/sem-map.png" alt="" /></a>
-										<header>
-											<h3 style="font-weight: bold">Trajectory Prediction Autonomous Driving</h3>
-										</header>
-									</article>
-<!--									<article class="item">-->
-<!--										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>-->
-<!--										<header>-->
-<!--											<h3>Rhoncus Semper</h3>-->
-<!--										</header>-->
-<!--									</article>-->
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/KhushalB/Autonomous-Driving-Wildlife-Park" class="image fit"><img src="images/dataset-lion.png" alt="" /></a>
-										<header>
-											<h3 style="font-weight: bold">Driving Dataset from Kenya <br />
-											End-to-End Learning Steering Control</h3>
-										</header>
-									</article>
-<!--									<article class="item">-->
-<!--										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>-->
-<!--										<header>-->
-<!--											<h3>Natoque Vitae</h3>-->
-<!--										</header>-->
-<!--									</article>-->
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://ieeexplore.ieee.org/document/8125902" class="image fit"><img src="images/uav1.jpg" alt="" /></a>
-										<header>
-											<h3 style="font-weight: bold">UAV Navigation using Neural Networks</h3>
-										</header>
-									</article>
-<!--									<article class="item">-->
-<!--										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>-->
-<!--										<header>-->
-<!--											<h3>Orci Convallis</h3>-->
-<!--										</header>-->
-<!--									</article>-->
-								</div>
-							</div>
+    let currentFactIndex = 0;
 
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-<!--							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>-->
-
-							<p style="text-align:left"><b><u>Research interests:</u></b> Learning-based methods for motion prediction and motion planning in autonomous driving.<br />
-							I'm specifically interested in using deep learning and reinforcement learning solutions to solve autonomous driving problems in unstructured environments.
-							Areas of interest in deep learning include CNNs, Transformers, LSTMs, GNNs, GANs.</p>
-
-							<p style="text-align:left"><b><u>Publications:</u></b></p>
-								<ul style="text-align:left">
-								<li> <a href="https://ieeexplore.ieee.org/document/8125902">Neural network approach for vision-based track navigation using low-powered computers on MAVs</a></li>
-								</ul>
-
-							<p style="text-align:left"><b><u>Education:</u></b></p>
-							<ul style="text-align:left">
-								<li>MS Robotics, Oregon State University, 2020 - 2022</li>
-								<li>BTech Mechatronics, Manipal University, 2013 - 2017</li>
-							</ul>
-
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-<!--							<p>Elementum sem parturient nulla quam placerat viverra-->
-<!--							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia-->
-<!--							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc-->
-<!--							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>-->
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Khushal Brahmbhatt. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    function showNextFact() {
+      const factBox = document.getElementById('factBox');
+      factBox.textContent = facts[currentFactIndex];
+      currentFactIndex = (currentFactIndex + 1) % facts.length;
+    }
+  </script>
+</body>
 </html>
